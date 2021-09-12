@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
 export const Title = styled.div`
+user-select: none;
 font-size: 60px;
 font-weight: bold;
 padding-bottom: 20px;
 `
 export const Info = styled.div`
+user-select: none;
 font-size: 18px;
 font-weight: bold;
 margin-top: 15px;
@@ -28,6 +30,7 @@ color: #999;
 `
 export const ButtonsArea = styled.div`
 margin-top: 15px;
+user-select: none;
 a{
     display: inline-block;
     font-size:20px;

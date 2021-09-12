@@ -6,6 +6,7 @@ const colors = [
 ]
 export const Header = styled.header<{ backgroundIndex: number }>`
     position: fixed;
+    user-select: none;
     z-index: 4;
     top: 0;
     left: 0;
