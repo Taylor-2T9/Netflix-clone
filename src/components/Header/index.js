@@ -25,7 +25,10 @@ const Header = () => {
                 </a>
             </Styled.LogoArea>
             <Styled.User>
-                <a href='/'>
+                <a
+                    href='https://github.com/Taylor-2T9'
+                    target={'_blank'}
+                >
                     <Styled.UserImage src={'https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'} alt={'Usuário'} />
                 </a>
             </Styled.User>
