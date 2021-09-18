@@ -9,7 +9,7 @@ const FeaturedMovie = ({ item }) => {
         const launchDate = item.first_air_date
         const launchYear = launchDate.slice(0, launchDate.indexOf('-'))
         let description = item.overview
-        if(description.length > 250){
+        if (description.length > 250) {
             description = description.substring(0, 250) + '...'
         }
         setFeaturedInfo({
@@ -29,7 +29,7 @@ const FeaturedMovie = ({ item }) => {
                     return state
                 }
             })
-        }        
+        }
     }, [item, genres])
     return (
         <Styled.Featured style={{
@@ -49,8 +49,18 @@ const FeaturedMovie = ({ item }) => {
                     </Styled.Info>
                     <Styled.Description>{featuredInfo?.description}</Styled.Description>
                     <Styled.ButtonsArea>
-                        <Styled.WatchButton href={`/watch/${item.id}`}>▶ Assistir</Styled.WatchButton>
-                        <Styled.AddListButton href={`/list/add/${item.id}`}>+ Minha Lista</Styled.AddListButton>
+                        <Styled.WatchButton href={`#`}
+                            onClick={() => {
+                                window.alert('Ainda não é possível fazer isso!')
+                            }}>
+                            ▶ Assistir
+                        </Styled.WatchButton>
+                        <Styled.AddListButton href={`#`}
+                            onClick={() => {
+                                window.alert('Ainda não é possível fazer isso!')
+                            }}>
+                            + Minha Lista
+                        </Styled.AddListButton>
                     </Styled.ButtonsArea>
                     <Styled.Genres>
                         <strong>Gêneros:</strong> {genres.join(', ')}

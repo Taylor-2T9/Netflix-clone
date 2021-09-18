@@ -27,6 +27,7 @@ height: 100%;
 `
 export const User = styled.div`
 height: 35px;
+
 `
 export const UserImage = styled.img`
 height: 100%;
